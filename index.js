@@ -8,7 +8,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 
 //2 Rutas ---> se crea con metodo y URL app.metodo("URL",funcion(request,response))
 app.get('/prueba',function(req,res){
-    res.send("Hola Mundo")// send o sendfile envia algo como res 
+    res.sendFile(__dirname+"/index.html")// send o sendfile envia algo como res 
 });
 //3 Listen
 app.listen(4000,function(){
